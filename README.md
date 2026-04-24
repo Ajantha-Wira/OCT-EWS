@@ -78,8 +78,6 @@ OCT_EWS/
 
 ## Dataset
 
-## Dataset
-
 Experiments are based on the Kermany OCT2017 dataset.
 
 Due to licensing restrictions, raw data is not included.  

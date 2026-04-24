@@ -15,6 +15,7 @@ A representation-space early warning system for detecting unsafe normal predicti
 ## Overview
 
 This repository presents the Early Warning System (EWS), a post-classification safety framework for detecting structurally atypical normal predictions in deep learning-based OCT screening.
+This work forms the foundational framework for subsequent research on representation-space safety and distance-based modelling in medical AI.
 
 The work is introduced in:
 

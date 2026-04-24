@@ -4,6 +4,7 @@ A representation-space early warning system for identifying unsafe
 normal predictions in automated OCT screening using embedding-space
 geometry.
 
+
 > **Note:**
 > This repository accompanies the research preprint and
 > provides a structured overview of the Early Warning System (EWS)
@@ -15,15 +16,15 @@ geometry.
 
 ## Overview
 
-This repository presents the Early Warning System (EWS),
-a post-classification safety framework designed to detect structurally
-atypical normal predictions in deep learning-based OCT screening.
+This repository presents the Early Warning System (EWS), a post-classification safety framework designed to detect structurally atypical normal predictions in deep learning-based OCT screening.
 
 The work is introduced in:
 
-> Wirasinghe, A. (2026) *An Embedding-Based Post-Classification Safety 
-> Layer for Identifying Unsafe Normal Predictions in OCT Screening*. 
-> [Under review]
+> Wirasinghe, A. (2026)  
+> *An embedding-based post-classification safety layer for detecting unsafe normal predictions in automated OCT screening*  
+> [Zenodo DOI – to be updated]
+
+Unlike conventional uncertainty methods that rely on softmax confidence, the EWS operates in representation space, analysing embedding geometry to identify predictions that may be unsafe to accept automatically.
 
 The EWS operates as a post-classification module alongside a trained 
 deep learning classifier. It identifies structurally atypical normal 
@@ -39,6 +40,17 @@ The system consists of three sequential layers:
 - **Layer C** — Clinical prioritisation and workflow decisions
 
 ## Repository Structure
+
+This public repository provides a conceptual and structural overview of the system architecture.
+
+The full implementation includes modules for:
+- data management and preprocessing
+- reference distribution construction
+- anomaly scoring (Mahalanobis distance)
+- disease-direction analysis
+- reporting and monitoring
+
+The complete source code is maintained in a private repository and will be released in a future version.
 
 ```
 OCT_EWS/
@@ -66,24 +78,28 @@ OCT_EWS/
 
 ## Dataset
 
-Experiments use the Kermany OCT2017 dataset. Due to licensing 
-restrictions, raw data is not included. See the paper for details 
-on the leakage-corrected preprocessing procedure.
+## Dataset
+
+Experiments are based on the Kermany OCT2017 dataset.
+
+Due to licensing restrictions, raw data is not included.  
+Details on leakage-corrected preprocessing are provided in the paper.
 
 ## Phase Design
 
-- **Phase 1** — Empirical thresholds (current implementation)
+- **Phase 1** — Empirical threshold-based detection (current implementation)  
 - **Phase 2** — Clinically validated thresholds (future work)
 
-> PRELIMINARY RESEARCH OUTPUT. Thresholds are not clinically 
-> validated. Not for clinical decision making.
+> Preliminary research output. Not intended for clinical decision-making.
+
 
 ## Citation
 
-If you use this code in your research, please cite:
+If you use this work, please cite:
 
-Wirasinghe, A. (2026) An embedding-based post-classification safety layer for detecting unsafe normal predictions in automated OCT screening.
-[Under review]
+Wirasinghe, A. (2026)
+*An embedding-based post-classification safety layer for detecting unsafe normal predictions in automated OCT screening*
+[Zenodo DOI]
 
 ## Licence
 
@@ -94,3 +110,11 @@ MIT Licence. See LICENSE for details.
 Ajantha Wirasinghe  
 MSc Computer Science with AI, Keele University  
 github.com/Ajantha-Wira
+
+## Preprint and DOI
+
+This work is available as a citable preprint:
+
+[Zenodo DOI – to be updated]
+
+A versioned release is maintained via Zenodo for reproducibility and timestamping.

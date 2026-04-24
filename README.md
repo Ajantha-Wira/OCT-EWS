@@ -1,8 +1,6 @@
 # OCT Early Warning System (OCT-EWS)
 
-A representation-space early warning system for identifying unsafe
-normal predictions in automated OCT screening using embedding-space
-geometry.
+A representation-space early warning system for detecting unsafe normal predictions in automated OCT screening using embedding-space geometry.
 
 
 > **Note:**
@@ -16,20 +14,15 @@ geometry.
 
 ## Overview
 
-This repository presents the Early Warning System (EWS), a post-classification safety framework designed to detect structurally atypical normal predictions in deep learning-based OCT screening.
+This repository presents the Early Warning System (EWS), a post-classification safety framework for detecting structurally atypical normal predictions in deep learning-based OCT screening.
 
 The work is introduced in:
 
 > Wirasinghe, A. (2026)  
-> *An embedding-based post-classification safety layer for detecting unsafe normal predictions in automated OCT screening*  
+> *An Embedding-Based Post-Classification Safety Layer for Detecting Unsafe Normal Predictions in OCT Screening*  
 > [Zenodo DOI – to be updated]
 
 Unlike conventional uncertainty methods that rely on softmax confidence, the EWS operates in representation space, analysing embedding geometry to identify predictions that may be unsafe to accept automatically.
-
-The EWS operates as a post-classification module alongside a trained 
-deep learning classifier. It identifies structurally atypical normal 
-predictions by analysing representation-space geometry rather than 
-relying on output probabilities alone.
 
 ## Framework
 
@@ -95,8 +88,8 @@ Details on leakage-corrected preprocessing are provided in the paper.
 
 If you use this work, please cite:
 
-Wirasinghe, A. (2026)
-*An embedding-based post-classification safety layer for detecting unsafe normal predictions in automated OCT screening*
+Wirasinghe, A. I. (2026)
+*An Embedding-Based Post-Classification Safety Layer for Detecting Unsafe Normal Predictions in OCT Screening*
 [Zenodo DOI]
 
 ## Licence

@@ -10,7 +10,7 @@ representation-space safety and distance-based modelling in medical AI.
 > includes selected configuration details and documentation. The full 
 > implementation, including source modules, notebooks, and test suite, 
 > is maintained in a private repository and will be released in a future 
-> public version at: github.com/Ajantha-Wira/OCT-EWS
+> public version at: github.com/Ajantha-Wira/OCT-EWS-framework
 
 ## Overview
 This repository presents the Early Warning System (EWS), a 
